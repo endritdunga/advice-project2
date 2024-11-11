@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles/styles.css" />
+    <title>Advice</title>
+  </head>
+  <body>
+    <div class="container">
+      <% if (data){ %>
+      <p class="shprehja"><%= data %></p>
+      <% } else if (error){ %>
+      <p><%= error %></p>
+      <% } %>
+      <div class="buttons">
+        <form action="/" method="post">
+          <button type="submit">TJETRA</button>
+        </form>
+        <a href="/add"> <button>RUAJ</button></a>
+      </div>
+    </div>
+  </body>
+</html>
